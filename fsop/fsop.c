@@ -13,7 +13,7 @@ void evil_func(char *param) {
 }
  
 int main() {
-	struct _IO_FILE *real_fp = fopen("lorem_ipsium.txt", "w");
+	struct _IO_FILE *real_fp = fopen("lorem_ipsum.txt", "w");
 	struct _IO_FILE *fake_fp = malloc(sizeof(struct _IO_FILE_plus));
 	((struct _IO_FILE_plus*) fake_fp)->vtable = calloc(21 ,8);
  

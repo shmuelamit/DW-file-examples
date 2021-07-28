@@ -4,7 +4,7 @@
 #define _IO_IS_APPENDING 0x1000
  
 int main() {
-	struct _IO_FILE *fp = fopen("lorem_ipsium.txt", "w");
+	struct _IO_FILE *fp = fopen("lorem_ipsum.txt", "w");
 	char buf1[] = "Hello world!\n";
 	char buf2[] = "Cyber cyber cyber!\n";
  
